@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cat vs Dog Classifier</title>
+	<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="static/styles/index.css">
+</head>
+
+<body>
+	<main role="main" class="container">
+		<div id="classifier">
+			<img id="img" src="static/img/first.png" width=224 height=224 />
+			<label class="" for="file_selector">
+				<p>Upload New Picture <input id="file_selector" type="file" onchange="changeImage()" accept="image/">
+				</p>
+			</label>
+			<label for="predict">
+				<input id="predict" value="Predict" type="button" onclick="predict()">
+			</label>
+		</div>
+	</main>
+	<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+	<script src="static/scripts/index.js"></script>
+</body>
+
+</html>
