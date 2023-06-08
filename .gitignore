@@ -1,7 +1,7 @@
 .vscode
 .idea
 models
-train*
-test*
+train*/
+test*/
 logs
 _*
